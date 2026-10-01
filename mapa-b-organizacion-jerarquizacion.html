@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Organización y jerarquización de sistemas</title>
+<meta name="viewport" content="width=1600">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Plus Jakarta Sans',Calibri,Arial,sans-serif;background:#fff;color:#16303B;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:1600px;margin:0 auto;padding:44px 48px 36px}
+.head{display:flex;align-items:flex-end;justify-content:space-between;border-bottom:3px solid #0B5563;padding-bottom:16px;margin-bottom:30px}
+.head h1{font-size:30px;font-weight:800;color:#0A2B3D;letter-spacing:-.4px}
+.head p{font-size:14px;color:#4B6672;margin-top:4px;font-weight:500}
+.tag{font-size:13px;font-weight:700;color:#fff;background:linear-gradient(90deg,#0B5563,#3B4A9E);padding:8px 16px;border-radius:999px;white-space:nowrap}
+.root{display:flex;flex-direction:column;align-items:center}
+.rootnode{background:linear-gradient(135deg,#0A2B3D,#14707F 60%,#3B4A9E);color:#fff;border-radius:20px;padding:20px 38px;text-align:center;max-width:760px;box-shadow:0 8px 22px rgba(10,43,61,.22)}
+.rootnode b{display:block;font-size:24px;font-weight:800;letter-spacing:-.3px}
+.rootnode span{display:block;font-size:13.5px;margin-top:6px;opacity:.88;font-weight:500}
+.rootline{width:2px;height:30px;background:#9DB5BF}
+.tree{display:flex;gap:16px}
+.branch{flex:1;position:relative;min-width:0;display:flex;flex-direction:column}
+.branch::before{content:"";position:absolute;top:0;left:-8px;right:-8px;height:2px;background:#9DB5BF}
+.branch:first-child::before{left:50%}
+.branch:last-child::before{right:50%}
+.branch:only-child::before{display:none}
+.conn{position:relative;height:74px;display:flex;align-items:center;justify-content:center}
+.conn::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:#9DB5BF}
+.conn::after{content:"";position:absolute;left:50%;bottom:-1px;margin-left:-6px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:9px solid #9DB5BF}
+.pill{position:relative;z-index:1;background:#fff;border:1.8px solid var(--c);color:var(--c);font-style:italic;font-weight:700;font-size:12.5px;padding:5px 12px;border-radius:999px;text-align:center;max-width:95%}
+.card{flex:1;border-radius:16px;overflow:hidden;background:#F4F9FB;border:1.5px solid color-mix(in srgb,var(--c) 28%,#fff);box-shadow:0 4px 14px rgba(10,43,61,.08)}
+.ch{background:var(--c);color:#fff;font-weight:800;font-size:16px;padding:13px 14px;text-align:center;letter-spacing:-.1px}
+.cb{padding:10px 12px 12px;display:flex;flex-direction:column;gap:9px}
+.it{font-size:12.6px;line-height:1.45;background:#fff;border-left:4px solid var(--c);border-radius:8px;padding:7px 9px;box-shadow:0 1px 3px rgba(10,43,61,.06)}
+.it em{display:block;font-size:11.3px;font-weight:700;color:var(--c);font-style:italic;margin-bottom:1px}
+.it b{font-weight:700;color:#0A2B3D}
+.xr{margin-top:34px;border:1.5px solid #CFE0E7;border-radius:16px;padding:16px 20px;background:linear-gradient(180deg,#fff,#F4F9FB)}
+.xr h2{font-size:15px;font-weight:800;color:#0A2B3D;margin-bottom:12px}
+.chains{display:flex;flex-direction:column;gap:10px}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.cn{background:#0A2B3D;color:#fff;font-weight:700;font-size:12.8px;padding:7px 14px;border-radius:10px}
+.cl{font-size:12px;font-style:italic;font-weight:700;color:#14707F;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.cl::after{content:"";width:22px;height:2px;background:#14707F;display:inline-block}
+.cl i{font-style:normal;color:#14707F;font-size:10px;margin-left:-10px;order:3}
+.foot{margin-top:20px;font-size:11.5px;color:#5C7580;line-height:1.5;border-top:1px solid #DCE8ED;padding-top:12px}
+.foot b{color:#0A2B3D}
+</style></head><body><div class="page">
+<div class="head"><div><h1>Organización y jerarquización de sistemas</h1><p>Mapa conceptual · Reto 1: Conexión de puntos clave, mapeando la integración de la cadena de suministros</p></div><div class="tag">Mapa b de 5</div></div>
+<div class="root"><div class="rootnode"><b>Jerarquía de sistemas en la organización</b><span>Cada nivel directivo y cada área funcional se apoya en un tipo de sistema distinto, integrados entre sí</span></div><div class="rootline"></div></div>
+<div class="tree"><div class="branch" style="--c:#0B5563"><div class="conn"><span class="pill">se estructura en</span></div>
+<div class="card"><div class="ch">Niveles organizacionales</div><div class="cb"><div class="it"><em>en la cima</em><b>Estratégico:</b> alta dirección, decisiones a largo plazo y poco estructuradas</div><div class="it"><em>en el centro</em><b>Táctico / gerencial:</b> mandos medios, planeación y control a mediano plazo</div><div class="it"><em>en la base</em><b>Operativo:</b> supervisores y operadores, tareas diarias y decisiones estructuradas</div><div class="it"><em>requiere</em><b>dirección</b> (planear, organizar, controlar) y <b>liderazgo</b> (impulsar el cambio), según Kotter</div></div></div></div><div class="branch" style="--c:#14707F"><div class="conn"><span class="pill">se apoya en</span></div>
+<div class="card"><div class="ch">Sistemas por nivel</div><div class="cb"><div class="it"><em>nivel operativo</em><b>TPS:</b> procesan transacciones y generan los datos base</div><div class="it"><em>nivel táctico</em><b>SIG (MIS):</b> reportes resumidos y comparativos</div><div class="it"><em>nivel táctico</em><b>SAD (DSS):</b> análisis, simulación y escenarios</div><div class="it"><em>nivel estratégico</em><b>EIS / ESS:</b> tableros con indicadores clave</div><div class="it"><em>todos los niveles</em><b>ERP:</b> integra niveles y áreas en una sola plataforma</div></div></div></div><div class="branch" style="--c:#1C6A9C"><div class="conn"><span class="pill">se basa en</span></div>
+<div class="card"><div class="ch">Teoría de sistemas</div><div class="cb"><div class="it"><em>el entorno es el</em><b>Suprasistema:</b> mercado, autoridades, proveedores y clientes</div><div class="it"><em>la empresa es un</em><b>Sistema:</b> elementos que persiguen un objetivo común</div><div class="it"><em>se divide en</em><b>Subsistemas:</b> módulos o áreas especializadas</div><div class="it"><em>por su</em><b>interdependencia,</b> un cambio en un subsistema afecta al todo</div><div class="it"><em>y se delimita por</em><b>fronteras</b> que separan al sistema de su entorno</div></div></div></div><div class="branch" style="--c:#2A55A3"><div class="conn"><span class="pill">se divide en</span></div>
+<div class="card"><div class="ch">Áreas funcionales</div><div class="cb"><div class="it"><em>incluye</em><b>Ventas y mercadotecnia:</b> pedidos, clientes, precios</div><div class="it"><em>incluye</em><b>Manufactura y producción:</b> planeación y órdenes</div><div class="it"><em>incluye</em><b>Finanzas y contabilidad:</b> registro, control y reportes</div><div class="it"><em>incluye</em><b>Recursos humanos:</b> nómina, personal y desempeño</div><div class="it"><em>incluye</em><b>Compras y logística:</b> abasto, almacén y distribución</div></div></div></div><div class="branch" style="--c:#3B4A9E"><div class="conn"><span class="pill">circula de forma</span></div>
+<div class="card"><div class="ch">Flujo de información</div><div class="cb"><div class="it"><em>ascendente</em>los datos detallados se <b>resumen</b> para niveles superiores</div><div class="it"><em>descendente</em>se comunican <b>objetivos, políticas y directrices</b></div><div class="it"><em>horizontal</em>se <b>coordinan</b> las áreas entre sí</div><div class="it"><em>en el proceso</em><b>dato → información → conocimiento</b> para decidir</div></div></div></div><div class="branch" style="--c:#4A3F93"><div class="conn"><span class="pill">evoluciona hacia</span></div>
+<div class="card"><div class="ch">Evolución e integración</div><div class="cb"><div class="it"><em>inicia con</em><b>sistemas aislados:</b> islas de información por área</div><div class="it"><em>avanza a</em><b>MRP → MRP II → ERP</b> (Ruiz Anchondo, 2009)</div><div class="it"><em>logra</em><b>base de datos única</b> compartida por todos los niveles</div><div class="it"><em>se protege con</em><b>roles y permisos</b> acordes a la jerarquía</div><div class="it"><em>exige</em><b>gobierno de datos</b> y reglas claras de captura</div></div></div></div></div>
+<div class="xr"><h2>Relaciones transversales entre conceptos</h2><div class="chains"><div class="chain"><span class="cn">Nivel operativo</span><span class="cl">genera datos para<i>&#9654;</i></span><span class="cn">Nivel táctico</span><span class="cl">que resume para<i>&#9654;</i></span><span class="cn">Nivel estratégico</span></div><div class="chain"><span class="cn">ERP</span><span class="cl">elimina<i>&#9654;</i></span><span class="cn">islas de información</span><span class="cl">mediante<i>&#9654;</i></span><span class="cn">base de datos única</span></div><div class="chain"><span class="cn">Subsistemas</span><span class="cl">se coordinan dentro del<i>&#9654;</i></span><span class="cn">sistema organizacional</span><span class="cl">que interactúa con el<i>&#9654;</i></span><span class="cn">suprasistema</span></div></div></div>
+<div class="foot"><b>Fuentes base:</b> Fugini et al. (2018); Kotter (1992); Ruiz Anchondo (2009); Vasconcelos Santillán (2014); Mejía Trejo (2023).</div>
+</div></body></html>
